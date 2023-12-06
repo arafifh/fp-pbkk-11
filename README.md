@@ -4,6 +4,10 @@ Name: Ahmad Rafif Hikmatiar
 <br>
 NRP: 5025211247
 
+## Link Video Youtube Presentasi FP
+https://youtu.be/QOWAWHJ32no
+
+### maaf ini yang bawah sepertinya readme tugas sebelumnya untuk auth
 ## User Table
 <img width="1552" alt="image" src="https://github.com/arafifh/fp-pbkk-11/assets/89500557/e18a9c50-ae32-40bb-a945-77a2d400e99f">
 <hr><br>
