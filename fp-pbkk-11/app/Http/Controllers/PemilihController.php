@@ -37,6 +37,12 @@ class PemilihController extends Controller
         return view('pemilih.data', compact('data'));
     }
 
+    public function getPemilihById($id) {
+        $data = DB::select('SELECT nik, name, tps, FROM pemilihs WHERE id = ? AND is_deleted = false', [$id]);
+
+        return view('pemilih.data-by-id', compact('data'));
+    }
+
     public function editPemilih($id) {
         $data = Pemilih::find($id);
     
@@ -45,7 +51,7 @@ class PemilihController extends Controller
     
     public function updatePemilih(Request $request, $id) {
         $request->validate([
-            'nik' => 'required|numeric|digits_between:15,15',
+            'nik' => 'required|numeric|digits:16',
             'name' => 'required',
             'tps' => 'required',
         ]);

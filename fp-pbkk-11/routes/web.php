@@ -21,6 +21,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/form', [PemilihController::class, 'index']);
         Route::post('/submit', [PemilihController::class, 'createPemilih'])->name('pemilih.create');
         Route::get('/data', [PemilihController::class, 'getPemilih'])->name('pemilih.data');
+        Route::get('/data/{id}', [PemilihController::class, 'getPemilihById'])->name('pemilih.data-by-id');
         Route::get('/edit/{id}', [PemilihController::class, 'editPemilih'])->name('pemilih.edit');
         Route::put('/update/{id}', [PemilihController::class, 'updatePemilih'])->name('pemilih.update');
         Route::get('/delete/{id}', [PemilihController::class, 'deletePemilih'])->name('pemilih.delete');
